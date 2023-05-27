@@ -14,8 +14,8 @@ vless://[**UUID**]@**[SNI DOMAIN]**:443?security=reality&sni=**[SNI DOMAIN]**&fp
 
 In case you want to build yourself (considering you have go > 1.20) from the [source](https://github.com/XrayR-project/XrayR):
 
-`git clone https://github.com/XrayR-project/XrayR`
-`cd XrayR/main`
-`go mod tidy`
-`go build -o XrayR -ldflags "-s -w"`
-`./XrayR -config config.yml`
+`git clone https://github.com/XrayR-project/XrayR`\n
+`cd XrayR/main`\n
+`go mod tidy`\n
+`go build -o XrayR -ldflags "-s -w"`\n
+`./XrayR -config config.yml`\n
