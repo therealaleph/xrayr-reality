@@ -11,3 +11,11 @@ Add a V2Ray node, TCP connection with port 443
 
 Link format:
 vless://[**UUID**]@**[SNI DOMAIN]**:443?security=reality&sni=**[SNI DOMAIN]**&fp=chrome&pbk=[**PUBLIC KEY**]&sid=[**Short ID**]&type=tcp&flow=xtls-rprx-vision#**[Connection NAME] **
+
+In case you want to build yourself (considering you have go > 1.20) from the [source](https://github.com/XrayR-project/XrayR):
+
+`git clone https://github.com/XrayR-project/XrayR
+cd XrayR/main
+go mod tidy
+go build -o XrayR -ldflags "-s -w"
+./XrayR -config config.yml`
