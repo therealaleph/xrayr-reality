@@ -115,7 +115,7 @@ install_XrayR() {
             exit 1
         fi
         echo -e "Detected the latest version of XrayR: ${last_version}, starting installation"
-        wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://aleph.wtf/wp-content/uploads/2023/05/xrayr.zip
+        wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip https://panel.gozargah.one/xrayr.zip
         if [[ $? -ne 0 ]]; then
             echo -e "${red}Failed to download XrayR. Make sure your server can download files from Github.${plain}"
             exit 1
@@ -126,7 +126,7 @@ install_XrayR() {
         else
             last_version="v"$1
         fi
-        url="https://aleph.wtf/wp-content/uploads/2023/05/xrayr.zip"
+        url="https://panel.gozargah.one/xrayr.zip"
         echo -e "Starting installation of XrayR ${last_version}"
         wget -q -N --no-check-certificate -O /usr/local/XrayR/XrayR-linux.zip ${url}
         if [[ $? -ne 0 ]]; then
